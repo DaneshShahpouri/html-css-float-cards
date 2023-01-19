@@ -54,6 +54,7 @@ main .table{
         margin: auto;
     }
 
+    
     .table .card .per_img{
         height: 90px;
         width: 90px;
@@ -75,6 +76,18 @@ main .table{
 
         box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
     }
+
+    /* HOVER */
+    .table .card .info:hover{
+        border-bottom: 2px solid rgb(49, 184, 223);
+        background-color: rgb(39, 37, 56);
+    }
+
+    main .table .card:hover{
+        padding: 15px 10px;
+        cursor: pointer;
+    }
+    /* /HOVER */
 
     .table .card .per_name{
         font-size: 1.2em;
