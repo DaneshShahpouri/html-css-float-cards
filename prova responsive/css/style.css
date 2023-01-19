@@ -64,6 +64,7 @@ main .table{
 
     .table .card .info{
         height: 90px;
+        text-align: left;
 
         padding: 0.5em;
         line-height: 1.5em;
