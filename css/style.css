@@ -1,13 +1,11 @@
 *{
-    background-color: rgba(0, 0, 0, 0.1);
-    /* DEBUG */
     margin: 0;
     padding: 0;
     box-sizing: border-box;   
     font-family: 'Fredoka', sans-serif; 
 }
 
-clear-fix:after{
+.clear-fix:after{
     content: "";
     display: block;
     clear: both;
@@ -26,6 +24,7 @@ header{
 main{
     max-width: 1000px;
     width: 80vw;
+    min-width: 300px;
 
     margin: 0 auto;
 }
@@ -35,11 +34,104 @@ main .paragraph{
     padding-bottom: 30px;
 }
 
-main .table .card{
-    border: 1px solid red;
-    /* DEBUG */
+main .table{
+    margin: 0 auto;
+    display: inline-block;
 
-    width: 33.3%;
-    height: 120px;
-     float: left;
+    padding-bottom: 10vw;
+}
+
+    /* TABLE */
+    .table .card{
+        width: 33.3%;
+        height: 120px;
+        min-width: 280px;
+
+        padding: 15px;
+
+        float: left;
+    }
+
+    .table .card .per_img{
+        height: 90px;
+        width: 90px;
+        margin-right: 10px;
+
+        float: left;
+    }
+
+    .table .card .info{
+        height: 90px;
+
+        padding: 0.5em;
+        line-height: 1.5em;
+
+
+        background-color: rgb(15, 14, 23);
+        color: white;
+
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+    }
+
+    .table .card .per_name{
+        font-size: 1.2em;
+    }
+
+    .table .card .per_prof{
+        font-size: 0.9em;
+        font-weight: 200;
+        display: block;
+    }
+
+    .table .card .per_email{
+        font-size: 0.7em;
+
+        text-decoration: none;
+        color: rgb(49, 184, 223);
+    }
+
+    /* PHOTO */
+    #first{
+        background-image: url(../img/male1.png);
+        background-size: cover;
+    }
+
+    #second{
+        background-image: url(../img/female1.png);
+        background-size: cover;
+    }
+
+    #third{
+        background-image: url(../img/male2.png);
+        background-size: cover;
+    }
+
+    #fourth{
+        background-image: url(../img/female2.png);
+        background-size: cover;
+    }
+
+    #fifth{
+        background-image: url(../img/male3.png);
+        background-size: cover;
+    }
+
+    #sixth{
+        background-image: url(../img/female3.png);
+        background-size: cover;
+    }
+
+
+footer{
+    background-color: rgba(1, 5, 44, 0.3);
+    color: white;
+
+    min-width: 300px;
+
+    margin-top: 10vw;
+    padding: 10px 0px;
+    
+    text-align: center;
+
+    height: 10vh;
 }
